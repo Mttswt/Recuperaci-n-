@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+
+
+libreria -- recursos
+recursos <-- libros
+recursos <-- DVD
+recursos <-- revistas
+recursos <-- VHS
+recursos <-- Internet 
+recursos <-- caset 
+
+
+recursos : genero 
+recursos : autor/productor
+recursos : cantidad
+recursos : Titulo 
+recursos : año_de_publicacion
+recursos : prestado_disponible
+recursos : estado_de_uso
+libreria : organizar_recurso()
+libreria : sacar_devolver_libros()
+
+@enduml
