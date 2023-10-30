@@ -1,6 +1,12 @@
 @startuml
 left to right direction
 
+abstract libros
+abstract DVD
+abstract revistas
+abstract VHS
+abstract Internet
+abstract caset
 
 libreria -- recursos
 recursos <-- libros
@@ -10,7 +16,12 @@ recursos <-- VHS
 recursos <-- Internet 
 recursos <-- caset 
 
-
+DVD : tamaño_en_MegaBites
+VHS : calidad_cinta
+Internet : velocidad_de_la_red
+caset : capacidad_del_disco
+revistas : formato_impresion
+libros : cantidad_de_paginas
 recursos : genero 
 recursos : autor/productor
 recursos : cantidad
